@@ -1,0 +1,76 @@
+extends base.pug
+
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css 
+        include ../static/pt.css 
+
+block content 
+    
+    
+
+    <link rel="stylesheet" media="screen and (max-width:1100px)" href="css/first.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@500&display=swap" rel="stylesheet">
+
+    
+    <section id="home">
+        <div class="aasan1">
+           |Personal Trainer </div> 
+    </section>
+    <h6>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </h6>
+    <div class="forms">
+        <form action="/pt" method="post" id="contact">
+          <input type="text" name="name" class="myinput" placeholder="Enter your name">
+          <input type="number" name="age" class="myinput" placeholder="Enter your age">
+          <input type="text" name="gender" class="myinput" placeholder="Enter your gender">
+          <input type="phone" name="Phone" class="myinput" placeholder="Enter your Phone no.">
+          <input type="phone" name="whatsapp" class="myinput" placeholder="Enter your whatsapp no.">
+          <input type="email" name="email" class="myinput" placeholder="Enter your Email id">
+          <input type="text" name="medical" class="myinput" placeholder="Enter any special medical condition(s) (If present)">
+            <select name="mypt" id="pt" >
+                <option value="Male-Trainer" class="myinput">Male-Trainer</option>
+                <option value="Female-Trainer" class="myinput">Female-Trainer</option>
+                <option value="Any available trainer" class="myinput">Any available trainer</option>
+            </select>
+            <select name="myday" id="day" >
+                <option value="Monday-Friday" class="myinput">Monday-Friday</option>
+                <option value="Saturday-Sunday" class="myinput">Saturday-Sunday</option>
+                <option value="Monday-Sunday" class="myinput">Monday-Sunday</option>
+            </select>
+            <select name="mytime" id="time" >
+                <option value="05:00 am - 06:00 am" class="myinput">05:00 am - 06:00 am</option>
+                <option value="06:00 am - 07:00 am" class="myinput">06:00 am - 07:00 am</option>
+                <option value="07:00 am - 08:00 am" class="myinput">07:00 am - 08:00 am</option>
+                <option value="06:00 pm - 07:00 pm" class="myinput">06:00 pm - 07:00 pm</option>
+                <option value="07:00 pm - 08:00 pm" class="myinput">07:00 pm - 08:00 pm</option>
+            </select>
+          <textarea name="address" class="myinput" cols="30" rows="10" placeholder="Enter your address"></textarea>
+          <button class="btn" id="submit" > Submit </button>
+    </div>
+    <footer id="foot">
+        <h4>
+           | Contact us <br>
+           | Mobile no:  9996604707, 9306764543 <br>
+           | Email id: jatinkumarsingh97@gmail.com, ranahimanshu6020@gmail.com
+        </h4> 
+    </footer>

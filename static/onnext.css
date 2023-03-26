@@ -1,0 +1,54 @@
+#home::before{
+    content: "";
+    background: url('/static/onnext1.png');
+    
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ z-index: -1;
+}
+.aasan1{
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    display: block;
+    margin: auto;
+    background-color: white;
+    border-radius: 27px;
+    opacity: 0.9;
+}
+.section{
+    height: 250px;
+    width: 99%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+}
+.item{
+    margin: 10px;
+    padding: 4px;
+    height: 180px;
+}
+.boxxxx{
+    background-color: rgb(246 245 245);
+    margin: 10px;
+    padding: 17px;
+    height: 165px;
+    width: 1000px;
+    border-radius: 27px;
+}
+.item img{
+    width:200px;
+    height: 200px;
+}
+.boxxxx h4{
+    font-size: 25px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.boxxxx h2{
+    font-size: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+.boxxxx p{
+    font-family: 'Source Sans Pro', sans-serif;
+}

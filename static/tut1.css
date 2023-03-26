@@ -1,0 +1,106 @@
+body
+{
+    background: url('/static/yoga-1665173_1280.jpg');
+}
+      h1{
+            color: rgb(0, 0, 0);
+            background-color: white;
+            opacity: 0.8;
+            text-align: center;
+            
+            font-size: 74px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container{
+            display: flex; 
+            height: 374px;
+            width: 100%;
+            /* border: 2px solid black; */
+            /* flex-direction: column; /*row default hoti h */
+            /* flex-direction: row-reverse; rows ko ulta chalayega */
+            /* flex-direction: column-reverse; columns ko ulta chalayega */ 
+            flex-wrap: wrap; /*isse screen badi choti hone pr ye apne app sahi kar lega presentable banayega site ko har size mein
+            */justify-content: center;
+            /* align-items: center; */
+            /* justify-content: space-evenly; */
+            justify-content: space-around;
+           /*  justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            */
+            /* align-items: stretch;  */
+        } 
+        .item{
+            font-family: 'Zen Kaku Gothic Antique', sans-serif;
+            width: 360px;
+            height: 140px;
+            color: white;
+            /* background-color: rgb(56, 0, 0); */
+            /* border: 2px solid rgb(24, 252, 3); */
+            margin: 10px;
+            padding: 3px;
+            text-align: center;
+            font-size: 38px;
+            transition-property: all;
+            transition-duration: 1s;
+            text-decoration: none;
+            justify-content: center;
+        }
+        .item:hover{
+            font-size: 44px;
+            text-decoration: underline;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            opacity: 0.8;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            position: sticky;
+        }
+        #logo img{
+            border-radius: 44px;
+            width: 75px;
+        }
+        #logo{
+            margin: 24px 50px;
+        }
+        #navbar ul{
+            display: flex;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        #navbar::before{
+         content: "";
+         background-color: rgb(12, 0, 0);
+         position: absolute;
+         height: 105%;
+         width: 100%;
+         z-index: -1;
+         opacity: 0.4;
+        }
+        
+        #navbar ul li{
+            list-style: none;
+            font-size: 22px;
+        }   
+        #navbar ul li a{
+            color: white;
+            display: block;
+            padding: 4px 27px;
+            border-radius: 20px;
+            text-decoration: none;
+            list-style: none;
+            font-size: 22px;
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in
+        }
+            
+        
+        #navbar ul li a:hover{
+            text-decoration: underline;
+            background-color: white;
+            color: black;
+        }
+       

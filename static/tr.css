@@ -1,0 +1,154 @@
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    
+}
+#logo img{
+    border-radius: 44px;
+    width: 75px;
+}
+#logo{
+    margin: 24px 50px;
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+ content: "";
+ background-color: rgb(12, 0, 0);
+ position: absolute;
+ height: 105%;
+ width: 100%;
+ z-index: -1;
+ opacity: 0.4;
+ border-radius: 54px;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 22px;
+}   
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 4px 27px;
+    border-radius: 20px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in
+}
+    
+
+#navbar ul li a:hover{
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+}
+#home{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 260px;
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.aasan1{
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    display: block;
+    margin: auto;
+    background-color: white;
+    border-radius: 27px;
+    opacity: 0.9;
+}
+#home::before{
+    content: "";
+    background: url('/static/trsession.jpg');
+ position: absolute;
+ height: 100%;
+ width: 100%;
+ z-index: -1;
+}
+input, textarea{
+    padding: 27px;
+    width: 50%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+.btn{
+    display: block;
+    margin: 4px auto;
+    padding: 12px 5px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.forms{
+    display: block;
+    margin: auto;
+}
+.please{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    text-align: center;
+    color: #000972;
+}
+.next a{
+    color: black;
+    display: block;
+    margin: auto;
+    padding: 4px 27px;
+    border-radius: 20px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 22px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    text-align: center;
+    font-size: 40px;
+    width: 07%;
+}
+    
+.next a:hover{
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+}
+#day{
+    padding: 27px;
+    width: 55%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
+#time{
+    padding: 27px;
+    width: 55%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto;
+}
